@@ -1,0 +1,39 @@
+.button-container {
+    flex: 1 1 auto;
+    
+    text-align: center;
+    /* margin: 20px 20px; */
+    /* margin-bottom: 100%; */
+    margin-top: 15%;
+    margin-left: 20px;
+    margin-right: 20px ;
+    /* border: var(--button-border); */
+    /* font-size: var(--button-text-size); */
+  }
+  
+  .button-container:hover {
+    cursor: pointer;
+  }
+
+  .button-value {
+    background-color: rgb(50, 140, 224);
+    border: none;
+    height: 40px;
+    /* font-size: 35px; */
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;
+    
+  
+  }
+
+  .timer-button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .time-display {
+    text-align: center;
+    font-size: 100px;
+  }

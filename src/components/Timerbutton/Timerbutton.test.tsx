@@ -1,19 +1,20 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import Timer from './Timer.component';
-// import Timerbutton from '../Timerbutton/Timerbutton.component'
+// import Timer from './Timer.component';
+import Timerbutton from './Timerbutton.component'
 
 
 describe('rendering app componet' , ()=>{
     let container:any
     beforeEach(()=>(
-        container = shallow(<Timer/>)))
+        container = shallow(<Timerbutton/>)))
         it('testing div' , ()=>{
             expect(container.find('div').length).toBeGreaterThanOrEqual(1)
         })
-        it('checking timer component' , ()=>{
-            expect(container.find('Timerbutton').length).toEqual(3)
+        it('testing button' , ()=>{
+            expect(container.find('button').length).toBeGreaterThanOrEqual(1)
         })
+
    
        
     })
