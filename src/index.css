@@ -17,7 +17,7 @@ body, div, p {
 	:root {
 		--timer-height: 100%;
 		--timer-width: 100%;
-    --button-text-size: 4em;
+    	--button-text-size: 4em;
   
 }
 }

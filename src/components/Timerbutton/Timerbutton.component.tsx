@@ -1,17 +1,14 @@
-import { type } from 'os';
-import React , {useState} from 'react'
+import React from 'react'
 import './Timerbutton.css';
+import { buttonProps } from './../../Types/Timertypes'
 
-// type: buttonprops = {
 
-// }
-
- const Timerbutton = () => {
-    const [minute, setMinute] = useState(0)
-    const [second , setSecond] = useState(0)
+ const Timerbutton:React.FC<buttonProps> = ({buttonAction , bvalue , className}) => {
+    // const [minute, setMinute] = useState(0)
+    // const [second , setSecond] = useState(0)
     return (
         <div className = 'button-container'>
-            <button className="button-value">button</button>
+            <button id = {className} className="button-value" onClick = {buttonAction}>{bvalue}</button>
         </div>
     )
 }
